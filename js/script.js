@@ -7,14 +7,13 @@ const nav = document.querySelector('.primary-nav');
 const year = document.querySelector('#current-year');
 
 const savedTheme = localStorage.getItem('theme');
-const preferredTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
 
 function applyTheme(theme) {
   root.dataset.theme = theme;
   themeIcon.textContent = theme === 'light' ? '☾' : '☼';
 }
 
-applyTheme(savedTheme || preferredTheme);
+applyTheme(savedTheme || 'light');
 
 themeToggle.addEventListener('click', () => {
   const nextTheme = root.dataset.theme === 'light' ? 'dark' : 'light';
