@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website bài tập môn Công nghệ Web của Nguyễn Trần Gia Phụng - MSSV 20235402.">
+  <meta name="theme-color" content="#0b1220">
+  <title>Nguyễn Trần Gia Phụng | Công nghệ Web</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Đi đến nội dung chính</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Trang chủ">
+        <span class="brand-mark" aria-hidden="true">NP</span>
+        <span>Gia Phụng</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Điều hướng chính">
+        <a href="#about">Giới thiệu</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#projects">Bài tập</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Chuyển giao diện sáng/tối" title="Chuyển giao diện">
+        <span class="theme-icon" aria-hidden="true">☼</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Sinh viên Công nghệ Web</p>
+          <h1 id="hero-title">Xin chào, mình là<br><strong>Nguyễn Trần Gia Phụng.</strong></h1>
+          <p class="hero-lead">Mình học cách biến ý tưởng thành những trải nghiệm web rõ ràng, dễ sử dụng và hoạt động tốt trên mọi thiết bị.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Xem bài tập <span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="#contact">Liên hệ</a>
+          </div>
+          <dl class="hero-meta" aria-label="Thông tin sinh viên">
+            <div><dt>MSSV</dt><dd>20235402</dd></div>
+            <div><dt>Môn học</dt><dd>Công nghệ Web</dd></div>
+            <div><dt>Trạng thái</dt><dd><span class="status-dot"></span>Đang học tập</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="code-card">
+            <div class="code-top"><span></span><span></span><span></span><small>portfolio.js</small></div>
+            <pre><code><span class="code-purple">const</span> student = {
+  name: <span class="code-green">"Gia Phụng"</span>,
+  id: <span class="code-orange">20235402</span>,
+  major: <span class="code-green">"Web"</span>,
+  ready: <span class="code-purple">true</span>
+};
+
+student.<span class="code-blue">keepLearning</span>();</code></pre>
+          </div>
+          <div class="floating-tag tag-html">HTML5</div>
+          <div class="floating-tag tag-css">CSS3</div>
+          <div class="floating-tag tag-js">JS</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container section-grid">
+        <div class="section-heading reveal">
+          <p class="section-index">01 / GIỚI THIỆU</p>
+          <h2 id="about-title">Học từ nền tảng,<br>tiến bộ qua thực hành.</h2>
+        </div>
+        <div class="about-content reveal">
+          <p class="large-copy">Website này là không gian lưu trữ và trình bày các sản phẩm trong quá trình học môn <strong>Công nghệ Web</strong>.</p>
+          <p>Mục tiêu của mình là nắm vững cấu trúc HTML có ngữ nghĩa, xây dựng giao diện responsive bằng CSS và tạo tương tác thân thiện với JavaScript.</p>
+          <div class="principles">
+            <article><span>01</span><h3>Rõ ràng</h3><p>Nội dung có cấu trúc, dễ đọc và dễ điều hướng.</p></article>
+            <article><span>02</span><h3>Thích ứng</h3><p>Hiển thị tốt từ điện thoại đến màn hình lớn.</p></article>
+            <article><span>03</span><h3>Tiếp cận</h3><p>Chú trọng bàn phím, độ tương phản và ngữ nghĩa.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading horizontal reveal">
+          <div><p class="section-index">02 / KỸ NĂNG</p><h2 id="skills-title">Công nghệ đang học.</h2></div>
+          <p>Nền tảng cốt lõi để xây dựng và quản lý một website hiện đại.</p>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card reveal"><span class="skill-number">01</span><div class="skill-icon">&lt;/&gt;</div><h3>HTML5</h3><p>Cấu trúc ngữ nghĩa, biểu mẫu và nội dung dễ tiếp cận.</p><div class="skill-line"><span style="--level: 84%"></span></div></article>
+          <article class="skill-card reveal"><span class="skill-number">02</span><div class="skill-icon">#</div><h3>CSS3</h3><p>Responsive layout, animation và hệ thống giao diện nhất quán.</p><div class="skill-line"><span style="--level: 78%"></span></div></article>
+          <article class="skill-card reveal"><span class="skill-number">03</span><div class="skill-icon">JS</div><h3>JavaScript</h3><p>Tương tác phía trình duyệt và quản lý trạng thái giao diện.</p><div class="skill-line"><span style="--level: 68%"></span></div></article>
+          <article class="skill-card reveal"><span class="skill-number">04</span><div class="skill-icon">Git</div><h3>Git & GitHub</h3><p>Quản lý phiên bản, cộng tác và triển khai bằng GitHub Pages.</p><div class="skill-line"><span style="--level: 72%"></span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading horizontal reveal">
+          <div><p class="section-index">03 / BÀI TẬP</p><h2 id="projects-title">Sản phẩm học tập.</h2></div>
+          <p>Danh mục sẽ được cập nhật xuyên suốt quá trình học.</p>
+        </div>
+        <div class="project-list">
+          <article class="project-item reveal">
+            <div class="project-number">01</div>
+            <div class="project-main"><p class="project-tag">HTML · CSS · JAVASCRIPT</p><h3>Website cá nhân</h3><p>Trang giới thiệu sinh viên với bố cục responsive, chuyển đổi giao diện và hiệu ứng cuộn.</p></div>
+            <div class="project-state">Hoàn thành <span aria-hidden="true">✓</span></div>
+          </article>
+          <article class="project-item muted reveal">
+            <div class="project-number">02</div>
+            <div class="project-main"><p class="project-tag">SẮP CẬP NHẬT</p><h3>Bài tập tiếp theo</h3><p>Nội dung mới sẽ xuất hiện tại đây khi hoàn thành.</p></div>
+            <div class="project-state">Đang chờ <span aria-hidden="true">→</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner reveal">
+        <p class="section-index">04 / LIÊN HỆ</p>
+        <h2 id="contact-title">Cùng kết nối và<br><em>chia sẻ ý tưởng.</em></h2>
+        <a class="button button-light" href="https://github.com/nguyenphung25" target="_blank" rel="noopener noreferrer">GitHub của mình <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year">2026</span> Nguyễn Trần Gia Phụng</p>
+      <p>Thiết kế và xây dựng cho môn Công nghệ Web.</p>
+      <a href="#top">Về đầu trang ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
