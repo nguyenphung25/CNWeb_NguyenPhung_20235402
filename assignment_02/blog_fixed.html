@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<!-- FIX: thêm lang="en" để khai báo ngôn ngữ nội dung (validator warning) -->
+<html lang="en">
+<head>
+	<!-- FIX: "utf8" -> "UTF-8" (chuẩn chỉ chấp nhận utf-8) -->
+	<meta charset="UTF-8">
+	<!-- FIX: xoá <title> thứ hai, mỗi tài liệu chỉ có đúng 1 <title> -->
+	<title>Blog - Blakletterpress Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div id="motto">
+				<!-- FIX: gộp 2 thuộc tính class trùng thành 1; width="142px" -> width="142" -->
+				<a href="index.html" class="sitename brand"><img src="images/blakletterpress.png" height="24" width="142" alt="SiteName"></a>
+				<p>
+					<!-- FIX: thêm alt mô tả chữ trong ảnh -->
+					<img src="images/header-text.png" height="14" width="218" alt="Your online source of trusted news">
+				</p>
+			</div>
+			<div id="logo">
+				<a href="index.html"><img src="images/logo.png" alt="LOGO"></a>
+			</div>
+			<div id="searchbar">
+				<form action="#" method="post">
+					<!-- FIX (khuyến nghị): thêm aria-label vì ô tìm kiếm không có <label>; bỏ tiền tố "javascript:" thừa trong event handler -->
+					<input type="text" value="Enter search query" class="txtfield" aria-label="Search query" onBlur="if(this.value==''){this.value=this.defaultValue;}" onFocus="if(this.value==this.defaultValue){this.value='';}">
+					<input type="submit" value="Search" class="btn">
+				</form>
+			</div>
+		</div>
+		<div id="contents">
+			<div id="main">
+				<div class="body">
+					<ul id="list">
+						<li>
+							<span class="time">01-01-2012</span>
+							<h3>BLOG TITLE ONE</h3>
+							<p>
+								<!-- FIX (khuyến nghị): <i> -> <em> để thể hiện nhấn mạnh có ngữ nghĩa (hiển thị vẫn in nghiêng) -->
+								This website template has been designed by Free Website Templates for you, for <em>free</em>. You can replace all this text with your own text. This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text.
+							</p>
+							<a href="blog.html" class="more">Read more >></a>
+						</li>
+						<li>
+							<span class="time">01-01-2012</span>
+							<h3>BLOG TITLE ONE</h3>
+							<p>
+								This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text.
+							</p>
+							<a href="blog.html" class="more">Read more >></a>
+						</li>
+						<li>
+							<span class="time">01-01-2012</span>
+							<h3>BLOG TITLE ONE</h3>
+							<p>
+								This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text.
+							</p>
+							<a href="blog.html" class="more">Read more >></a>
+						</li>
+						<li>
+							<span class="time">01-01-2012</span>
+							<h3>BLOG TITLE ONE</h3>
+							<p>
+								This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text.
+							</p>
+							<a href="blog.html" class="more">Read more >></a>
+						</li>
+						<li>
+							<span class="time">01-01-2012</span>
+							<h3>BLOG TITLE ONE</h3>
+							<p>
+								This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text.
+							</p>
+							<a href="blog.html" class="more">Read more >></a>
+						</li>
+					</ul>
+					<!-- FIX: chuyển <div class="ad"> ra ngoài <ul> (con trực tiếp của <ul> chỉ được là <li>) -->
+					<div class="ad">Sponsored</div>
+					<div id="pagination">
+						<!-- FIX: "First" trỏ về trang đầu (blog.html) như các link cùng nhóm, bỏ URL ?page=2&sort=new sai đích; đóng </a> cho link "1" -->
+						<a href="blog.html">&lt;&lt;</a> <a href="blog.html">First</a> <a href="blog.html">1</a> <a href="blog.html">2</a> <a href="blog.html">3</a> <a href="blog.html">4</a> <a href="blog.html">5</a> <a href="blog.html">6</a> <a href="blog.html">7</a> <a href="blog.html">8</a> <a href="blog.html">9</a> <a href="blog.html">10</a> <a href="blog.html">11</a> <a href="blog.html">12</a> <a href="blog.html">13</a> <a href="blog.html">14</a> <a href="blog.html">15</a> <a href="blog.html">16</a> <a href="blog.html">17</a> <a href="blog.html">18</a> <a href="blog.html">19</a> <a href="blog.html">20</a> <a href="blog.html">Last</a> <a href="blog.html">&gt;&gt;</a>
+					</div>
+				</div>
+			</div>
+			<div id="sidebar">
+				<div id="navigation">
+					<div>
+						<!-- FIX: xoá id="list" bị trùng với danh sách bài viết ở #main -->
+						<ul>
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="about.html">About</a>
+							</li>
+							<li>
+								<a href="news.html">News</a>
+							</li>
+							<li class="selected">
+								<a href="blog.html">Blog</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="section">
+					<div id="connect">
+						<h2>Connect with us:</h2>
+						<!-- FIX (khuyến nghị): link chỉ có icon nền -> thêm aria-label; thêm rel="noopener" cho target="_blank" -->
+						<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" rel="noopener" class="twitter" aria-label="Twitter"></a> <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" rel="noopener" class="facebook" aria-label="Facebook"></a> <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" rel="noopener" class="googleplus" aria-label="Google+"></a>
+					</div>
+				</div>
+				<div class="section">
+					<div id="posts">
+						<h2>Placeholder</h2>
+						<ul>
+							<li>
+								<!-- FIX: <h5> -> <h3> (h2 nhảy thẳng xuống h5 là lỗi validator; CSS "#posts h3" giữ nguyên giao diện) -->
+								<h3>Title Sample One</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius
+								</p>
+								<a href="news.html" class="more">Read more</a>
+							</li>
+							<li>
+								<h3>Title Sample One</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius
+								</p>
+								<a href="news.html" class="more">Read more</a>
+							</li>
+						<!-- FIX: </ol> -> </ul> cho khớp thẻ mở -->
+						</ul>
+						<!-- FIX: href="" -> news.html (cùng đích với các link "Read more" của nhóm) -->
+						<a href="news.html" class="btn2">View More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+				<ul id="featured">
+					<li>
+						<!-- FIX (khuyến nghị): link icon không có chữ -> thêm aria-label (áp dụng cho cả 4 icon) -->
+						<a href="index.html" class="home" aria-label="Home"></a>
+						<p>
+							This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+						</p>
+					</li>
+					<li>
+						<a href="index.html" class="bell" aria-label="Notifications"></a>
+						<p>
+							This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+						</p>
+					</li>
+					<li>
+						<a href="index.html" class="globe" aria-label="Worldwide"></a>
+						<p>
+							This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+						</p>
+					</li>
+					<li>
+						<a href="index.html" class="pencil" aria-label="Write"></a>
+						<p>
+							This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+						</p>
+					</li>
+				</ul>
+				<p id="footnote">
+					© Copyright © 2011.Company name all rights reserved
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
