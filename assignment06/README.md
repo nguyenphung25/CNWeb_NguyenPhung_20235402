@@ -59,18 +59,16 @@
 ### Lỗi 1: Bấm "Thêm" nhưng form không hiện
 
 - **Hiện tượng:** bấm nút Thêm, form không xuất hiện; Console không báo lỗi. Code gây lỗi: `<button onClick={setAdding(false)}>Hủy</button>`
+  ![Console lỗi 1](docs/images/loi1-console.png)
+
 - **Nguyên nhân:** `onClick` cần nhận một hàm, nhưng `setAdding(false)` là lời gọi hàm nên chạy ngay khi render. Vừa bấm Thêm (`adding = true`), lúc render nút Hủy lại đặt `adding = false` nên form biến mất ngay.
 - **Cách sửa:** truyền arrow function để chỉ gọi khi người dùng bấm: `<button onClick={() => setAdding(false)}>Hủy</button>`
 
 ### Lỗi 2: Warning trùng key khi thêm sau khi xóa
 
-- **Hiện tượng:** xóa người dùng #2 rồi thêm mới, bảng có hai dòng cùng ID #10. Console báo:
+- **Hiện tượng:** xóa người dùng #2 rồi thêm mới, bảng có hai dòng cùng ID #10. Console báo warning trùng key:
 
-  ```text
-  Warning: Encountered two children with the same key, `10`. Keys should be
-  unique so that components maintain their identity across updates.
-      at tbody ... at ResultTable ... at App
-  ```
+  ![Console lỗi 2](docs/images/loi2-console.png)
 
 - **Nguyên nhân:** ID mới tính bằng `prev.length + 1`. Sau khi xóa còn 9 người nên ID mới là 10, trùng với người #10 đang có; React dùng `key={u.id}` nên báo trùng key, và thao tác sửa/xóa theo ID ảnh hưởng cả hai dòng.
 - **Cách sửa:** lấy ID lớn nhất hiện có cộng 1 (sau khi sửa, người mới nhận ID #11, hết warning):
