@@ -4,7 +4,7 @@
 
 | Nộp bài | Liên kết |
 |---|---|
-| Link báo cáo Ứng dụng React CRUD | https://github.com/nguyenphung25/CNWeb_NguyenPhung_20235402/tree/main/assignment06 |
+| Link báo cáo Ứng dụng React CRUD | https://docs.google.com/document/d/1TSjZ3xnHcuOOqZQPlxkhirCSWaqUxzeE9mw9bki1sgs/edit?usp=sharing |
 | Link kết quả Ứng dụng React CRUD | https://nguyenphung25.github.io/CNWeb_NguyenPhung_20235402/assignment06/ |
 | Báo cáo Word | [BaoCao_React_CRUD.docx](BaoCao_React_CRUD.docx) |
 
